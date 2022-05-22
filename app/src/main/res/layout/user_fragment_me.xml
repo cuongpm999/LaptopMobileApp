@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="#008970"
+            android:padding="20dp"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/userAvatar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/anhdaidien2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_weight="7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+              <TextView
+                  android:id="@+id/userUsername"
+                  android:textSize="25dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="cuongpham999"
+                  android:textStyle="bold"
+                  android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/custom_textview1"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thành viên"
+                    android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    android:textColor="@color/teal_700" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvEditProfile"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/outline_edit_black_24dp"
+                android:text=" Thiết lập tài khoản" />
+            <TextView
+                android:id="@+id/tvChangePassword"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_password_24"
+                android:text=" Thay đổi password" />
+            <TextView
+                android:id="@+id/tvMyOrder"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/outline_event_note_black_24dp"
+                android:text=" Đơn mua" />
+            <TextView
+                android:id="@+id/tvLogout"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/outline_power_settings_new_black_24dp"
+                android:text=" Đăng xuất" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
