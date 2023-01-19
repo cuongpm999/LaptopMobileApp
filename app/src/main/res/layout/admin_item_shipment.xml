@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <LinearLayout
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvNameShipment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vietel Post"
+                android:textColor="#E91E63"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvPriceShipment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="100000 đ"
+                android:textColor="#DD80A0"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvAddressShipment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hà Nội"
+                android:textColor="#DD80A0"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/ibUpdateShipment"
+            android:layout_gravity="center"
+            android:padding="9dp"
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_edit_24"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/ibDelShipment"
+            android:layout_gravity="center"
+            android:padding="9dp"
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

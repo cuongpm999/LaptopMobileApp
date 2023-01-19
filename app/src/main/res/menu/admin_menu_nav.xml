@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/mAdminHome"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/mAdminManufacturer"
+            android:icon="@drawable/ic_baseline_category_24"
+            android:title="Manufacturer" />
+        <item
+            android:id="@+id/mAdminlaptop"
+            android:icon="@drawable/ic_baseline_computer_24"
+            android:title="Laptop" />
+
+        <item
+            android:id="@+id/mAdminUser"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="User" />
+        <item
+            android:id="@+id/mAdminShipment"
+            android:icon="@drawable/ic_baseline_local_shipping_24"
+            android:title="Shipment" />
+        <item
+            android:id="@+id/mAdminOrder"
+            android:icon="@drawable/ic_baseline_shopping_cart_24"
+            android:title="Order" />
+
+        <item
+            android:id="@+id/mAdminStat"
+            android:icon="@drawable/ic_baseline_bar_chart_24"
+            android:title="Statistic" />
+        <item
+            android:id="@+id/mAdminLogout"
+            android:icon="@drawable/ic_baseline_power_settings_new_24"
+            android:title="Logout" />
+    </group>
+
+</menu>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.AdminOrderItem">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:background="#008970"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:background="@color/teal_700"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#FFEB3B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thông tin khách hàng" />
+            <TextView
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:id="@+id/tvFullName"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phạm Mạnh Cường" />
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvAddress"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Địa chỉ: Hà Nội" />
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvMobile"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Điện thoại: 0123456789" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:background="@color/teal_700"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:id="@+id/tvStatusOrder"
+                android:textColor="#FFEB3B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đã giao hàng" />
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvDateOrder"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ngày mua: 00:47:48 23/04/2022" />
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvPaymentType"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hình thức thanh toán: Cash" />
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvShipment"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đơn vị vận chuyển: Viettel Post 100,000 đ" />
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvTotalMoney"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thành tiền 100,000 đ" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMyCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
