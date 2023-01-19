@@ -1,6 +1,6 @@
 # Laptop Mobile App
 
-Demo app android thương mại điện tử, sản phẩm là laptop, gồm đầy đủ các chức năng của một app thương mại điện tử hiện nay
+Demo app android thương mại điện tử, sản phẩm là laptop, gồm đầy đủ các chức năng của một app thương mại điện tử hiện nay.
 
 ## Kiến trúc
 - Dùng kiến trúc Layered Architecture
